@@ -1,0 +1,62 @@
+Mar 30 09:19:13.390 HYPERVISOR: Release 0.2.17-x86/Windows (tag 2017072410)
+Mar 30 09:19:13.391 HYPERVISOR: Started on IP = 192.168.1.38, TCP port = 52832.
+Mar 30 09:19:13.884 HYPERVISOR: exec_cmd: hypervisor version 
+Mar 30 09:19:13.885 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\Luis\Documents\GitHub\USAL-GII-3-RIP-OSPF\RIP\entorno_actual2\project-files\dynamips 
+Mar 30 09:19:13.885 GENERAL: working_dir=C:\Users\Luis\Documents\GitHub\USAL-GII-3-RIP-OSPF\RIP\entorno_actual2\project-files\dynamips
+Mar 30 09:19:13.885 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\Luis\Documents\GitHub\USAL-GII-3-RIP-OSPF\RIP\entorno_actual2\project-files\dynamips\1bd74813-5bac-420f-a315-47dfb7ad9d52 
+Mar 30 09:19:13.914 GENERAL: working_dir=C:\Users\Luis\Documents\GitHub\USAL-GII-3-RIP-OSPF\RIP\entorno_actual2\project-files\dynamips\1bd74813-5bac-420f-a315-47dfb7ad9d52
+Mar 30 09:19:13.915 HYPERVISOR: exec_cmd: vm create R3 3 c7200 
+Mar 30 09:19:13.917 VM: VM R3 created.
+Mar 30 09:19:13.917 HYPERVISOR: exec_cmd: vm set_con_tcp_port R3 5002 
+Mar 30 09:19:13.917 HYPERVISOR: exec_cmd: c7200 get_mac_addr R3 
+Mar 30 09:19:13.918 HYPERVISOR: exec_cmd: vm get_status R3 
+Mar 30 09:19:13.918 HYPERVISOR: exec_cmd: vm slot_add_binding R3 0 0 C7200-IO-FE 
+Mar 30 09:19:13.918 HYPERVISOR: exec_cmd: vm set_disk0 R3 0 
+Mar 30 09:19:13.919 HYPERVISOR: exec_cmd: vm set_exec_area R3 64 
+Mar 30 09:19:13.919 HYPERVISOR: exec_cmd: vm get_status R3 
+Mar 30 09:19:13.919 HYPERVISOR: exec_cmd: vm set_idle_pc R3 0x608724c0 
+Mar 30 09:19:13.920 HYPERVISOR: exec_cmd: vm set_ios R3 C:/Users/Luis/GNS3/images/IOS/c7200-jk9s-mz.124-13b.image 
+Mar 30 09:19:13.921 HYPERVISOR: exec_cmd: c7200 set_mac_addr R3 ca03.18c0.0000 
+Mar 30 09:19:13.991 HYPERVISOR: exec_cmd: vm set_nvram R3 512 
+Mar 30 09:19:13.991 HYPERVISOR: exec_cmd: vm set_ram R3 512 
+Mar 30 09:19:13.991 HYPERVISOR: exec_cmd: vm get_status R3 
+Mar 30 09:19:13.991 HYPERVISOR: exec_cmd: vm slot_add_binding R3 1 0 PA-2FE-TX 
+Mar 30 09:19:13.992 HYPERVISOR: exec_cmd: vm get_status R3 
+Mar 30 09:19:13.992 HYPERVISOR: exec_cmd: vm slot_add_binding R3 2 0 PA-2FE-TX 
+Mar 30 09:19:13.992 HYPERVISOR: exec_cmd: vm get_status R3 
+Mar 30 09:19:13.992 HYPERVISOR: exec_cmd: vm slot_add_binding R3 3 0 PA-GE 
+Mar 30 09:19:13.992 HYPERVISOR: exec_cmd: vm get_status R3 
+Mar 30 09:19:13.992 HYPERVISOR: exec_cmd: vm slot_add_binding R3 4 0 PA-GE 
+Mar 30 09:19:17.299 HYPERVISOR: exec_cmd: nio create_udp udp-a7e4991e-ab12-420c-a66f-8465552087f1 10008 127.0.0.1 10009 
+Mar 30 09:19:17.523 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R3 4 0 udp-a7e4991e-ab12-420c-a66f-8465552087f1 
+Mar 30 09:19:17.523 HYPERVISOR: exec_cmd: vm get_status R3 
+Mar 30 09:19:18.495 HYPERVISOR: exec_cmd: nio create_udp udp-13446133-9bc3-40ba-ab58-14be4936d1bc 10036 127.0.0.1 10037 
+Mar 30 09:19:18.503 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R3 3 0 udp-13446133-9bc3-40ba-ab58-14be4936d1bc 
+Mar 30 09:19:18.503 HYPERVISOR: exec_cmd: vm get_status R3 
+Mar 30 09:22:02.123 HYPERVISOR: exec_cmd: vm create Ghost 0 c7200 
+Mar 30 09:22:02.126 VM: VM Ghost created.
+Mar 30 09:22:02.130 HYPERVISOR: exec_cmd: vm set_ios Ghost C:/Users/Luis/GNS3/images/IOS/c7200-jk9s-mz.124-13b.image 
+Mar 30 09:22:02.130 HYPERVISOR: exec_cmd: vm set_ghost_status Ghost 1 
+Mar 30 09:22:02.132 HYPERVISOR: exec_cmd: vm set_ghost_file Ghost 'C:\Users\Luis\Documents\GitHub\USAL-GII-3-RIP-OSPF\RIP\entorno_actual2\project-files\dynamips\c7200-jk9s-mz.124-13b.image-512.ghost' 
+Mar 30 09:22:02.132 HYPERVISOR: exec_cmd: vm set_ram Ghost 512 
+Mar 30 09:22:02.132 HYPERVISOR: exec_cmd: vm get_status Ghost 
+Mar 30 09:22:02.212 HYPERVISOR: exec_cmd: vm set_config Ghost configs\i0_startup-config.cfg 
+Mar 30 09:22:02.213 HYPERVISOR: exec_cmd: vm start Ghost 
+Mar 30 09:22:02.265 HYPERVISOR: exec_cmd: vm clean_delete Ghost 
+Mar 30 09:22:02.487 VM: VM Ghost shutdown.
+Mar 30 09:22:02.487 VM: VM Ghost destroyed.
+Mar 30 09:22:02.538 HYPERVISOR: exec_cmd: vm get_status R3 
+Mar 30 09:22:02.540 HYPERVISOR: exec_cmd: vm set_config R3 configs\i3_startup-config.cfg configs\i3_private-config.cfg 
+Mar 30 09:22:02.540 HYPERVISOR: exec_cmd: vm start R3 
+Mar 30 09:22:34.016 HYPERVISOR: exec_cmd: vm extract_config R3 
+Mar 30 10:25:22.871 HYPERVISOR: exec_cmd: vm get_status R3 
+Mar 30 10:25:22.872 HYPERVISOR: exec_cmd: vm stop R3 
+Mar 30 10:25:23.033 VM: VM R3 shutdown.
+Mar 30 10:25:23.034 HYPERVISOR: exec_cmd: vm extract_config R3 
+Mar 30 10:25:23.782 HYPERVISOR: exec_cmd: vm get_status R3 
+Mar 30 10:25:23.782 HYPERVISOR: exec_cmd: vm extract_config R3 
+Mar 30 10:25:23.784 HYPERVISOR: exec_cmd: vm delete R3 
+Mar 30 10:25:23.784 VM: VM R3 destroyed.
+Mar 30 10:25:23.787 HYPERVISOR: exec_cmd: hypervisor stop 
+Mar 30 10:25:24.121 HYPERVISOR: Stopped.
+Mar 30 10:25:24.121 GENERAL: reset done.
