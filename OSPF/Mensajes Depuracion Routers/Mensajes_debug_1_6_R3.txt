@@ -1,0 +1,201 @@
+R3#debug ip ospf events
+OSPF events debugging is on
+R3#
+*Apr  5 19:00:29.451: OSPF: Send hello to 224.0.0.5 area 1 on GigabitEthernet4/0 from 30.0.0.1
+R3#
+*Apr  5 19:00:33.067: OSPF: Send hello to 224.0.0.5 area 1 on GigabitEthernet3/0 from 20.0.0.2
+R3#
+*Apr  5 19:00:37.915: OSPF: Rcv hello from 20.0.0.1 area 1 from GigabitEthernet3/0 20.0.0.1
+*Apr  5 19:00:37.915: OSPF: End of hello processing
+R3#
+*Apr  5 19:00:39.451: OSPF: Send hello to 224.0.0.5 area 1 on GigabitEthernet4/0 from 30.0.0.1
+R3#
+*Apr  5 19:00:43.067: OSPF: Send hello to 224.0.0.5 area 1 on GigabitEthernet3/0 from 20.0.0.2
+R3#
+*Apr  5 19:00:47.895: OSPF: Rcv hello from 20.0.0.1 area 1 from GigabitEthernet3/0 20.0.0.1
+*Apr  5 19:00:47.895: OSPF: End of hello processing
+R3#
+*Apr  5 19:00:49.451: OSPF: Send hello to 224.0.0.5 area 1 on GigabitEthernet4/0 from 30.0.0.1
+R3#
+*Apr  5 19:00:53.067: OSPF: Send hello to 224.0.0.5 area 1 on GigabitEthernet3/0 from 20.0.0.2
+R3#
+*Apr  5 19:00:56.371: OSPF: Rcv hello from 41.0.0.1 area 1 from GigabitEthernet4/0 30.0.0.2
+*Apr  5 19:00:56.375: OSPF: Send immediate hello to nbr 41.0.0.1, src address 30.0.0.2, on GigabitEthernet4/0
+*Apr  5 19:00:56.375: OSPF: Send hello to 30.0.0.2 area 1 on GigabitEthernet4/0 from 30.0.0.1
+*Apr  5 19:00:56.375: OSPF: End of hello processing
+R3#
+*Apr  5 19:00:57.887: OSPF: Rcv hello from 20.0.0.1 area 1 from GigabitEthernet3/0 20.0.0.1
+*Apr  5 19:00:57.887: OSPF: End of hello processing
+R3#
+*Apr  5 19:00:59.451: OSPF: Send hello to 224.0.0.5 area 1 on GigabitEthernet4/0 from 30.0.0.1
+*Apr  5 19:00:59.479: OSPF: Rcv hello from 41.0.0.1 area 1 from GigabitEthernet4/0 30.0.0.2
+*Apr  5 19:00:59.479: OSPF: 2 Way Communication to 41.0.0.1 on GigabitEthernet4/0, state 2WAY
+*Apr  5 19:00:59.483: OSPF: Neighbor change Event on interface GigabitEthernet4/0
+*Apr  5 19:00:59.483: OSPF: DR/BDR election on GigabitEthernet4/0
+*Apr  5 19:00:59.483: OSPF: Elect BDR 41.0.0.1
+*Apr  5 19:00:59.483: OSPF: Elect DR 30.0.0.1
+*Apr  5 19:00:59.483:        DR: 30.0.0.1 (Id)   BDR: 41.0.0.1 (Id)
+*Apr  5 19:00:59.487: OSPF: Send DBD to 41.0.0.1 on GigabitEthernet4/0 seq 0x12F1 opt 0x52 flag 0x7 len 32
+*Apr  5 19:00:59.487: OSPF: Neighbor change Event on interface GigabitEthernet4/0
+*Apr  5 19:00:59.487: OSPF: DR/BDR election on GigabitEthernet4/0
+*Apr  5 19:00:59.487: OSPF: Elect BDR 41.0.0.1
+*Apr  5 19:00:59.487: OSPF: Elect DR 30.0.0.1
+*Apr  5 19:00:59.487:        DR: 30.0.0.1 (I
+R3#d)   BDR: 41.0.0.1 (Id)
+*Apr  5 19:00:59.487: OSPF: Neighbor change Event on interface GigabitEthernet4/0
+*Apr  5 19:00:59.487: OSPF: DR/BDR election on GigabitEthernet4/0
+*Apr  5 19:00:59.487: OSPF: Elect BDR 41.0.0.1
+*Apr  5 19:00:59.487: OSPF: Elect DR 30.0.0.1
+*Apr  5 19:00:59.487:        DR: 30.0.0.1 (Id)   BDR: 41.0.0.1 (Id)
+*Apr  5 19:00:59.487: OSPF: End of hello processing
+*Apr  5 19:00:59.487: OSPF: Rcv DBD from 41.0.0.1 on GigabitEthernet4/0 seq 0x2480 opt 0x52 flag 0x7 len 32  mtu 1500 state EXSTART
+*Apr  5 19:00:59.487: OSPF: NBR Negotiation Done. We are the SLAVE
+*Apr  5 19:00:59.487: OSPF: Send DBD to 41.0.0.1 on GigabitEthernet4/0 seq 0x2480 opt 0x52 flag 0x2 len 132
+*Apr  5 19:00:59.503: OSPF: Rcv DBD from 41.0.0.1 on GigabitEthernet4/0 seq 0x2481 opt 0x52 flag 0x3 len 52  mtu 1500 state EXCHANGE
+*Apr  5 19:00:59.503: OSPF: Send DBD to 41.0.0.1 on GigabitEthernet4/0 seq 0x2481 opt 0x52 flag 0x0 len 32
+*Apr  5 19:00:59.523: OSPF: Rcv DBD from 41.0.0.1 on G
+R3#igabitEthernet4/0 seq 0x2482 opt 0x52 flag 0x1 len 32  mtu 1500 state EXCHANGE
+*Apr  5 19:00:59.523: OSPF: Exchange Done with 41.0.0.1 on GigabitEthernet4/0
+*Apr  5 19:00:59.527: OSPF: Send LS REQ to 41.0.0.1 length 12 LSA count 1
+*Apr  5 19:00:59.527: OSPF: Send DBD to 41.0.0.1 on GigabitEthernet4/0 seq 0x2482 opt 0x52 flag 0x0 len 32
+*Apr  5 19:00:59.531: OSPF: Rcv LS REQ from 41.0.0.1 on GigabitEthernet4/0 length 84 LSA count 5
+*Apr  5 19:00:59.531: OSPF: Send UPD to 30.0.0.2 on GigabitEthernet4/0 length 224 LSA count 5
+*Apr  5 19:00:59.551: OSPF: Rcv LS UPD from 41.0.0.1 on GigabitEthernet4/0 length 64 LSA count 1
+*Apr  5 19:00:59.555: OSPF: Synchronized with 41.0.0.1 on GigabitEthernet4/0, state FULL
+*Apr  5 19:00:59.555: %OSPF-5-ADJCHG: Process 1, Nbr 41.0.0.1 on GigabitEthernet4/0 from LOADING to FULL, Loading Done
+R3#
+*Apr  5 19:01:03.067: OSPF: Send hello to 224.0.0.5 area 1 on GigabitEthernet3/0 from 20.0.0.2
+R3#
+*Apr  5 19:01:04.987: OSPF: Rcv LS UPD from 41.0.0.1 on GigabitEthernet4/0 length 76 LSA count 1
+R3#
+*Apr  5 19:01:06.375: OSPF: Rcv hello from 41.0.0.1 area 1 from GigabitEthernet4/0 30.0.0.2
+*Apr  5 19:01:06.375: OSPF: End of hello processing
+R3#
+*Apr  5 19:01:07.867: OSPF: Rcv hello from 20.0.0.1 area 1 from GigabitEthernet3/0 20.0.0.1
+*Apr  5 19:01:07.867: OSPF: End of hello processing
+R3#
+*Apr  5 19:01:09.451: OSPF: Send hello to 224.0.0.5 area 1 on GigabitEthernet4/0 from 30.0.0.1
+R3#
+*Apr  5 19:01:12.191: OSPF: Rcv LS UPD from 41.0.0.1 on GigabitEthernet4/0 length 88 LSA count 1
+*Apr  5 19:01:13.067: OSPF: Send hello to 224.0.0.5 area 1 on GigabitEthernet3/0 from 20.0.0.2
+R3#
+*Apr  5 19:01:16.387: OSPF: Rcv hello from 41.0.0.1 area 1 from GigabitEthernet4/0 30.0.0.2
+*Apr  5 19:01:16.387: OSPF: End of hello processing
+R3#
+*Apr  5 19:01:17.911: OSPF: Rcv hello from 20.0.0.1 area 1 from GigabitEthernet3/0 20.0.0.1
+*Apr  5 19:01:17.911: OSPF: End of hello processing
+R3#
+*Apr  5 19:01:19.451: OSPF: Send hello to 224.0.0.5 area 1 on GigabitEthernet4/0 from 30.0.0.1
+R3#
+*Apr  5 19:01:23.067: OSPF: Send hello to 224.0.0.5 area 1 on GigabitEthernet3/0 from 20.0.0.2
+R3#
+*Apr  5 19:01:26.407: OSPF: Rcv hello from 41.0.0.1 area 1 from GigabitEthernet4/0 30.0.0.2
+*Apr  5 19:01:26.407: OSPF: End of hello processing
+R3#
+*Apr  5 19:01:27.911: OSPF: Rcv hello from 20.0.0.1 area 1 from GigabitEthernet3/0 20.0.0.1
+*Apr  5 19:01:27.911: OSPF: End of hello processing
+R3#
+*Apr  5 19:01:29.451: OSPF: Send hello to 224.0.0.5 area 1 on GigabitEthernet4/0 from 30.0.0.1
+R3#
+*Apr  5 19:01:33.067: OSPF: Send hello to 224.0.0.5 area 1 on GigabitEthernet3/0 from 20.0.0.2
+R3#
+*Apr  5 19:01:36.411: OSPF: Rcv hello from 41.0.0.1 area 1 from GigabitEthernet4/0 30.0.0.2
+*Apr  5 19:01:36.411: OSPF: End of hello processing
+R3#
+*Apr  5 19:01:37.891: OSPF: Rcv hello from 20.0.0.1 area 1 from GigabitEthernet3/0 20.0.0.1
+*Apr  5 19:01:37.891: OSPF: End of hello processing
+R3#
+*Apr  5 19:01:39.451: OSPF: Send hello to 224.0.0.5 area 1 on GigabitEthernet4/0 from 30.0.0.1
+R3#
+*Apr  5 19:01:42.627: OSPF: Rcv LS UPD from 41.0.0.1 on GigabitEthernet4/0 length 88 LSA count 1
+*Apr  5 19:01:43.067: OSPF: Send hello to 224.0.0.5 area 1 on GigabitEthernet3/0 from 20.0.0.2
+R3#
+*Apr  5 19:01:46.383: OSPF: Rcv hello from 41.0.0.1 area 1 from GigabitEthernet4/0 30.0.0.2
+*Apr  5 19:01:46.383: OSPF: End of hello processing
+R3#
+*Apr  5 19:01:47.883: OSPF: Rcv hello from 20.0.0.1 area 1 from GigabitEthernet3/0 20.0.0.1
+*Apr  5 19:01:47.883: OSPF: End of hello processing
+R3#
+*Apr  5 19:01:49.451: OSPF: Send hello to 224.0.0.5 area 1 on GigabitEthernet4/0 from 30.0.0.1
+R3#
+*Apr  5 19:01:53.067: OSPF: Send hello to 224.0.0.5 area 1 on GigabitEthernet3/0 from 20.0.0.2
+R3#
+*Apr  5 19:01:56.415: OSPF: Rcv hello from 41.0.0.1 area 1 from GigabitEthernet4/0 30.0.0.2
+*Apr  5 19:01:56.415: OSPF: End of hello processing
+R3#
+*Apr  5 19:01:57.915: OSPF: Rcv hello from 20.0.0.1 area 1 from GigabitEthernet3/0 20.0.0.1
+*Apr  5 19:01:57.915: OSPF: End of hello processing
+R3#
+*Apr  5 19:01:59.451: OSPF: Send hello to 224.0.0.5 area 1 on GigabitEthernet4/0 from 30.0.0.1
+R3#
+*Apr  5 19:02:03.067: OSPF: Send hello to 224.0.0.5 area 1 on GigabitEthernet3/0 from 20.0.0.2
+R3#
+*Apr  5 19:02:06.371: OSPF: Rcv hello from 41.0.0.1 area 1 from GigabitEthernet4/0 30.0.0.2
+*Apr  5 19:02:06.371: OSPF: End of hello processing
+R3#
+*Apr  5 19:02:07.899: OSPF: Rcv hello from 20.0.0.1 area 1 from GigabitEthernet3/0 20.0.0.1
+*Apr  5 19:02:07.899: OSPF: End of hello processing
+R3#
+*Apr  5 19:02:09.451: OSPF: Send hello to 224.0.0.5 area 1 on GigabitEthernet4/0 from 30.0.0.1
+R3#
+*Apr  5 19:02:13.067: OSPF: Send hello to 224.0.0.5 area 1 on GigabitEthernet3/0 from 20.0.0.2
+R3#
+*Apr  5 19:02:16.399: OSPF: Rcv hello from 41.0.0.1 area 1 from GigabitEthernet4/0 30.0.0.2
+*Apr  5 19:02:16.399: OSPF: End of hello processing
+R3#
+*Apr  5 19:02:17.911: OSPF: Rcv hello from 20.0.0.1 area 1 from GigabitEthernet3/0 20.0.0.1
+*Apr  5 19:02:17.911: OSPF: End of hello processing
+R3#
+*Apr  5 19:02:19.451: OSPF: Send hello to 224.0.0.5 area 1 on GigabitEthernet4/0 from 30.0.0.1
+R3#
+*Apr  5 19:02:23.067: OSPF: Send hello to 224.0.0.5 area 1 on GigabitEthernet3/0 from 20.0.0.2
+R3#
+*Apr  5 19:02:26.383: OSPF: Rcv hello from 41.0.0.1 area 1 from GigabitEthernet4/0 30.0.0.2
+*Apr  5 19:02:26.383: OSPF: End of hello processing
+R3#
+*Apr  5 19:02:27.891: OSPF: Rcv hello from 20.0.0.1 area 1 from GigabitEthernet3/0 20.0.0.1
+*Apr  5 19:02:27.891: OSPF: End of hello processing
+R3#
+*Apr  5 19:02:29.451: OSPF: Send hello to 224.0.0.5 area 1 on GigabitEthernet4/0 from 30.0.0.1
+R3#
+*Apr  5 19:02:33.067: OSPF: Send hello to 224.0.0.5 area 1 on GigabitEthernet3/0 from 20.0.0.2
+R3#
+*Apr  5 19:02:36.375: OSPF: Rcv hello from 41.0.0.1 area 1 from GigabitEthernet4/0 30.0.0.2
+*Apr  5 19:02:36.375: OSPF: End of hello processing
+R3#
+*Apr  5 19:02:37.899: OSPF: Rcv hello from 20.0.0.1 area 1 from GigabitEthernet3/0 20.0.0.1
+*Apr  5 19:02:37.899: OSPF: End of hello processing
+R3#
+*Apr  5 19:02:39.451: OSPF: Send hello to 224.0.0.5 area 1 on GigabitEthernet4/0 from 30.0.0.1
+R3#
+*Apr  5 19:02:43.067: OSPF: Send hello to 224.0.0.5 area 1 on GigabitEthernet3/0 from 20.0.0.2
+R3#
+*Apr  5 19:02:46.379: OSPF: Rcv hello from 41.0.0.1 area 1 from GigabitEthernet4/0 30.0.0.2
+*Apr  5 19:02:46.379: OSPF: End of hello processing
+R3#
+*Apr  5 19:02:47.903: OSPF: Rcv hello from 20.0.0.1 area 1 from GigabitEthernet3/0 20.0.0.1
+*Apr  5 19:02:47.903: OSPF: End of hello processing
+R3#
+*Apr  5 19:02:49.451: OSPF: Send hello to 224.0.0.5 area 1 on GigabitEthernet4/0 from 30.0.0.1
+R3#
+*Apr  5 19:02:53.067: OSPF: Send hello to 224.0.0.5 area 1 on GigabitEthernet3/0 from 20.0.0.2
+R3#
+*Apr  5 19:02:56.387: OSPF: Rcv hello from 41.0.0.1 area 1 from GigabitEthernet4/0 30.0.0.2
+*Apr  5 19:02:56.387: OSPF: End of hello processing
+R3#
+*Apr  5 19:02:57.907: OSPF: Rcv hello from 20.0.0.1 area 1 from GigabitEthernet3/0 20.0.0.1
+*Apr  5 19:02:57.907: OSPF: End of hello processing
+R3#
+*Apr  5 19:02:59.451: OSPF: Send hello to 224.0.0.5 area 1 on GigabitEthernet4/0 from 30.0.0.1
+R3#
+*Apr  5 19:03:03.067: OSPF: Send hello to 224.0.0.5 area 1 on GigabitEthernet3/0 from 20.0.0.2
+R3#
+*Apr  5 19:03:06.399: OSPF: Rcv hello from 41.0.0.1 area 1 from GigabitEthernet4/0 30.0.0.2
+*Apr  5 19:03:06.399: OSPF: End of hello processing
+R3#
+*Apr  5 19:03:07.875: OSPF: Rcv hello from 20.0.0.1 area 1 from GigabitEthernet3/0 20.0.0.1
+*Apr  5 19:03:07.875: OSPF: End of hello processing
+R3#
+*Apr  5 19:03:09.451: OSPF: Send hello to 224.0.0.5 area 1 on GigabitEthernet4/0 from 30.0.0.1
+R3#
+*Apr  5 19:03:13.067: OSPF: Send hello to 224.0.0.5 area 1 on GigabitEthernet3/0 from 20.0.0.2
