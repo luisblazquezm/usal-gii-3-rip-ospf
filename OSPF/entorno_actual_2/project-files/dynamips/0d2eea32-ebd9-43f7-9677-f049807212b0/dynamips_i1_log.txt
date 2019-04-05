@@ -1,0 +1,62 @@
+Apr 04 16:45:44.380 HYPERVISOR: Release 0.2.17-x86/Windows (tag 2017072410)
+Apr 04 16:45:44.380 HYPERVISOR: Started on IP = 192.168.1.38, TCP port = 59049.
+Apr 04 16:45:44.599 HYPERVISOR: exec_cmd: hypervisor version 
+Apr 04 16:45:44.599 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\Luis\Documents\GitHub\USAL-GII-3-RIP-OSPF\OSPF\entorno_actual_2\project-files\dynamips 
+Apr 04 16:45:44.724 GENERAL: working_dir=C:\Users\Luis\Documents\GitHub\USAL-GII-3-RIP-OSPF\OSPF\entorno_actual_2\project-files\dynamips
+Apr 04 16:45:44.724 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\Luis\Documents\GitHub\USAL-GII-3-RIP-OSPF\OSPF\entorno_actual_2\project-files\dynamips\033010d2-7c6c-4135-9953-e2e1dd2063f9 
+Apr 04 16:45:44.724 GENERAL: working_dir=C:\Users\Luis\Documents\GitHub\USAL-GII-3-RIP-OSPF\OSPF\entorno_actual_2\project-files\dynamips\033010d2-7c6c-4135-9953-e2e1dd2063f9
+Apr 04 16:45:44.724 HYPERVISOR: exec_cmd: vm create R5 5 c7200 
+Apr 04 16:45:44.724 VM: VM R5 created.
+Apr 04 16:45:44.724 HYPERVISOR: exec_cmd: vm set_con_tcp_port R5 5009 
+Apr 04 16:45:44.724 HYPERVISOR: exec_cmd: c7200 get_mac_addr R5 
+Apr 04 16:45:44.724 HYPERVISOR: exec_cmd: vm get_status R5 
+Apr 04 16:45:44.724 HYPERVISOR: exec_cmd: vm slot_add_binding R5 0 0 C7200-IO-FE 
+Apr 04 16:45:44.724 HYPERVISOR: exec_cmd: vm set_disk0 R5 0 
+Apr 04 16:45:44.724 HYPERVISOR: exec_cmd: vm set_exec_area R5 64 
+Apr 04 16:45:44.724 HYPERVISOR: exec_cmd: vm get_status R5 
+Apr 04 16:45:44.724 HYPERVISOR: exec_cmd: vm set_idle_pc R5 0x608724c0 
+Apr 04 16:45:44.724 HYPERVISOR: exec_cmd: vm set_ios R5 C:/Users/Luis/GNS3/images/IOS/c7200-jk9s-mz.124-13b.image 
+Apr 04 16:45:44.724 HYPERVISOR: exec_cmd: c7200 set_mac_addr R5 ca05.2f84.0000 
+Apr 04 16:45:44.724 HYPERVISOR: exec_cmd: vm set_nvram R5 512 
+Apr 04 16:45:44.724 HYPERVISOR: exec_cmd: vm set_ram R5 512 
+Apr 04 16:45:44.724 HYPERVISOR: exec_cmd: vm get_status R5 
+Apr 04 16:45:44.724 HYPERVISOR: exec_cmd: vm slot_add_binding R5 1 0 PA-2FE-TX 
+Apr 04 16:45:44.724 HYPERVISOR: exec_cmd: vm get_status R5 
+Apr 04 16:45:44.724 HYPERVISOR: exec_cmd: vm slot_add_binding R5 2 0 PA-2FE-TX 
+Apr 04 16:45:44.724 HYPERVISOR: exec_cmd: vm get_status R5 
+Apr 04 16:45:44.724 HYPERVISOR: exec_cmd: vm slot_add_binding R5 3 0 PA-GE 
+Apr 04 16:45:44.739 HYPERVISOR: exec_cmd: vm get_status R5 
+Apr 04 16:45:44.739 HYPERVISOR: exec_cmd: vm slot_add_binding R5 4 0 PA-GE 
+Apr 04 16:45:49.160 HYPERVISOR: exec_cmd: nio create_udp udp-87aa34ca-b1fb-4ccf-90cd-f4b7b93f799b 10016 127.0.0.1 10017 
+Apr 04 16:45:49.394 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R5 3 0 udp-87aa34ca-b1fb-4ccf-90cd-f4b7b93f799b 
+Apr 04 16:45:49.394 HYPERVISOR: exec_cmd: vm get_status R5 
+Apr 04 16:45:49.722 HYPERVISOR: exec_cmd: nio create_udp udp-7c757804-cf2e-49c7-99f2-2304eb38ff86 10038 127.0.0.1 10039 
+Apr 04 16:45:49.722 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R5 4 0 udp-7c757804-cf2e-49c7-99f2-2304eb38ff86 
+Apr 04 16:45:49.722 HYPERVISOR: exec_cmd: vm get_status R5 
+Apr 04 16:47:31.213 HYPERVISOR: exec_cmd: vm create Ghost 0 c7200 
+Apr 04 16:47:31.213 VM: VM Ghost created.
+Apr 04 16:47:31.213 HYPERVISOR: exec_cmd: vm set_ios Ghost C:/Users/Luis/GNS3/images/IOS/c7200-jk9s-mz.124-13b.image 
+Apr 04 16:47:31.213 HYPERVISOR: exec_cmd: vm set_ghost_status Ghost 1 
+Apr 04 16:47:31.213 HYPERVISOR: exec_cmd: vm set_ghost_file Ghost 'C:\Users\Luis\Documents\GitHub\USAL-GII-3-RIP-OSPF\OSPF\entorno_actual_2\project-files\dynamips\c7200-jk9s-mz.124-13b.image-512.ghost' 
+Apr 04 16:47:31.213 HYPERVISOR: exec_cmd: vm set_ram Ghost 512 
+Apr 04 16:47:31.213 HYPERVISOR: exec_cmd: vm get_status Ghost 
+Apr 04 16:47:31.213 HYPERVISOR: exec_cmd: vm set_config Ghost configs\i0_startup-config.cfg 
+Apr 04 16:47:31.213 HYPERVISOR: exec_cmd: vm start Ghost 
+Apr 04 16:47:31.245 HYPERVISOR: exec_cmd: vm clean_delete Ghost 
+Apr 04 16:47:31.448 VM: VM Ghost shutdown.
+Apr 04 16:47:31.448 VM: VM Ghost destroyed.
+Apr 04 16:47:31.463 HYPERVISOR: exec_cmd: vm get_status R5 
+Apr 04 16:47:31.823 HYPERVISOR: exec_cmd: vm set_config R5 configs\i5_startup-config.cfg configs\i5_private-config.cfg 
+Apr 04 16:47:31.823 HYPERVISOR: exec_cmd: vm start R5 
+Apr 04 16:48:02.159 HYPERVISOR: exec_cmd: vm extract_config R5 
+Apr 04 19:01:32.963 HYPERVISOR: exec_cmd: vm get_status R5 
+Apr 04 19:01:32.963 HYPERVISOR: exec_cmd: vm stop R5 
+Apr 04 19:01:33.156 VM: VM R5 shutdown.
+Apr 04 19:01:33.157 HYPERVISOR: exec_cmd: vm extract_config R5 
+Apr 04 19:01:34.016 HYPERVISOR: exec_cmd: vm get_status R5 
+Apr 04 19:01:34.017 HYPERVISOR: exec_cmd: vm extract_config R5 
+Apr 04 19:01:34.020 HYPERVISOR: exec_cmd: vm delete R5 
+Apr 04 19:01:34.020 VM: VM R5 destroyed.
+Apr 04 19:01:34.022 HYPERVISOR: exec_cmd: hypervisor stop 
+Apr 04 19:01:34.455 HYPERVISOR: Stopped.
+Apr 04 19:01:34.455 GENERAL: reset done.
