@@ -1,0 +1,62 @@
+Apr 07 09:58:04.982 HYPERVISOR: Release 0.2.18-amd64/Linux (tag 2018033112)
+Apr 07 09:58:04.982 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 51851.
+Apr 07 09:58:04.992 HYPERVISOR: exec_cmd: hypervisor version 
+Apr 07 09:58:04.993 HYPERVISOR: exec_cmd: hypervisor working_dir /home/mrhydden/AA_usal/infor/courses/3/projects/usal-gii-3-rip-ospf/OSPF/entorno_ej_1_6/project-files/dynamips 
+Apr 07 09:58:04.993 GENERAL: working_dir=/home/mrhydden/AA_usal/infor/courses/3/projects/usal-gii-3-rip-ospf/OSPF/entorno_ej_1_6/project-files/dynamips
+Apr 07 09:58:04.993 HYPERVISOR: exec_cmd: hypervisor working_dir /home/mrhydden/AA_usal/infor/courses/3/projects/usal-gii-3-rip-ospf/OSPF/entorno_ej_1_6/project-files/dynamips/c8b8de9c-9609-4001-9cd5-08a5554d14ea 
+Apr 07 09:58:04.993 GENERAL: working_dir=/home/mrhydden/AA_usal/infor/courses/3/projects/usal-gii-3-rip-ospf/OSPF/entorno_ej_1_6/project-files/dynamips/c8b8de9c-9609-4001-9cd5-08a5554d14ea
+Apr 07 09:58:04.993 HYPERVISOR: exec_cmd: vm create R4 4 c7200 
+Apr 07 09:58:04.993 VM: VM R4 created.
+Apr 07 09:58:04.994 HYPERVISOR: exec_cmd: vm set_con_tcp_port R4 5013 
+Apr 07 09:58:04.994 HYPERVISOR: exec_cmd: c7200 get_mac_addr R4 
+Apr 07 09:58:04.995 HYPERVISOR: exec_cmd: vm get_status R4 
+Apr 07 09:58:04.995 HYPERVISOR: exec_cmd: vm slot_add_binding R4 0 0 C7200-IO-FE 
+Apr 07 09:58:04.995 HYPERVISOR: exec_cmd: vm get_status R4 
+Apr 07 09:58:04.996 HYPERVISOR: exec_cmd: vm slot_add_binding R4 4 0 PA-GE 
+Apr 07 09:58:04.996 HYPERVISOR: exec_cmd: vm get_status R4 
+Apr 07 09:58:04.996 HYPERVISOR: exec_cmd: vm slot_add_binding R4 2 0 PA-2FE-TX 
+Apr 07 09:58:04.997 HYPERVISOR: exec_cmd: vm set_ram R4 512 
+Apr 07 09:58:04.997 HYPERVISOR: exec_cmd: vm get_status R4 
+Apr 07 09:58:04.997 HYPERVISOR: exec_cmd: vm set_idle_pc R4 0x608724c0 
+Apr 07 09:58:04.998 HYPERVISOR: exec_cmd: vm get_status R4 
+Apr 07 09:58:04.998 HYPERVISOR: exec_cmd: vm slot_add_binding R4 1 0 PA-2FE-TX 
+Apr 07 09:58:04.998 HYPERVISOR: exec_cmd: vm set_nvram R4 512 
+Apr 07 09:58:04.999 HYPERVISOR: exec_cmd: c7200 set_mac_addr R4 ca04.344d.0000 
+Apr 07 09:58:04.999 HYPERVISOR: exec_cmd: vm get_status R4 
+Apr 07 09:58:04.999 HYPERVISOR: exec_cmd: vm slot_add_binding R4 3 0 PA-GE 
+Apr 07 09:58:05.000 HYPERVISOR: exec_cmd: vm set_disk0 R4 0 
+Apr 07 09:58:05.001 HYPERVISOR: exec_cmd: vm set_ios R4 /home/mrhydden/GNS3/images/IOS/c7200-jk9s-mz.124-13b.image 
+Apr 07 09:58:05.293 HYPERVISOR: exec_cmd: nio create_udp udp-3d1783c7-8b59-48d5-9a4b-909f2e9b6dcb 10002 127.0.0.1 10003 
+Apr 07 09:58:05.511 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R4 0 0 udp-3d1783c7-8b59-48d5-9a4b-909f2e9b6dcb 
+Apr 07 09:58:05.511 HYPERVISOR: exec_cmd: vm get_status R4 
+Apr 07 09:58:05.887 HYPERVISOR: exec_cmd: nio create_udp udp-93eb676c-b876-4a04-aea2-b1ad3e24cb4f 10008 127.0.0.1 10009 
+Apr 07 09:58:05.889 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R4 3 0 udp-93eb676c-b876-4a04-aea2-b1ad3e24cb4f 
+Apr 07 09:58:05.890 HYPERVISOR: exec_cmd: vm get_status R4 
+Apr 07 09:58:06.103 HYPERVISOR: exec_cmd: nio create_udp udp-76aa1da7-fee7-4ea5-97e1-ce17ab945378 10014 127.0.0.1 10015 
+Apr 07 09:58:06.105 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R4 4 0 udp-76aa1da7-fee7-4ea5-97e1-ce17ab945378 
+Apr 07 09:58:06.105 HYPERVISOR: exec_cmd: vm get_status R4 
+Apr 07 10:01:44.223 HYPERVISOR: exec_cmd: vm set_ghost_status R4 2 
+Apr 07 10:01:44.227 HYPERVISOR: exec_cmd: vm set_ghost_file R4 /home/mrhydden/AA_usal/infor/courses/3/projects/usal-gii-3-rip-ospf/OSPF/entorno_ej_1_6/project-files/dynamips/c7200-jk9s-mz.124-13b.image-512.ghost 
+Apr 07 10:01:44.228 HYPERVISOR: exec_cmd: vm get_status R4 
+Apr 07 10:01:44.230 HYPERVISOR: exec_cmd: vm set_config R4 configs/i4_startup-config.cfg configs/i4_private-config.cfg 
+Apr 07 10:01:44.232 HYPERVISOR: exec_cmd: vm start R4 
+Apr 07 10:02:14.495 HYPERVISOR: exec_cmd: vm extract_config R4 
+Apr 07 10:15:44.541 HYPERVISOR: exec_cmd: vm extract_config R4 
+Apr 07 10:32:15.959 HYPERVISOR: exec_cmd: vm extract_config R4 
+Apr 07 10:33:45.964 HYPERVISOR: exec_cmd: vm extract_config R4 
+Apr 07 10:43:22.773 HYPERVISOR: exec_cmd: nio bind_filter udp-76aa1da7-fee7-4ea5-97e1-ce17ab945378 2 capture 
+Apr 07 10:43:22.774 HYPERVISOR: exec_cmd: nio setup_filter udp-76aa1da7-fee7-4ea5-97e1-ce17ab945378 2 en10mb /home/mrhydden/AA_usal/infor/courses/3/projects/usal-gii-3-rip-ospf/OSPF/entorno_ej_1_6/tmp/captures/R4_GigabitEthernet40_to_R5_GigabitEthernet30.pcap 
+Apr 07 10:55:11.826 HYPERVISOR: exec_cmd: vm get_status R4 
+Apr 07 10:55:11.850 HYPERVISOR: exec_cmd: vm stop R4 
+Apr 07 10:55:12.090 VM: VM R4 shutdown.
+Apr 07 10:55:12.091 HYPERVISOR: exec_cmd: vm extract_config R4 
+Apr 07 10:55:12.098 HYPERVISOR: exec_cmd: nio unbind_filter udp-76aa1da7-fee7-4ea5-97e1-ce17ab945378 2 
+Apr 07 10:56:07.312 HYPERVISOR: exec_cmd: vm get_status R4 
+Apr 07 10:56:07.313 HYPERVISOR: exec_cmd: vm extract_config R4 
+Apr 07 10:56:07.650 HYPERVISOR: exec_cmd: vm get_status R4 
+Apr 07 10:56:07.651 HYPERVISOR: exec_cmd: vm extract_config R4 
+Apr 07 10:56:07.652 HYPERVISOR: exec_cmd: vm delete R4 
+Apr 07 10:56:07.652 VM: VM R4 destroyed.
+Apr 07 10:56:07.654 HYPERVISOR: exec_cmd: hypervisor stop 
+Apr 07 10:56:08.088 HYPERVISOR: Stopped.
+Apr 07 10:56:08.088 GENERAL: reset done.
