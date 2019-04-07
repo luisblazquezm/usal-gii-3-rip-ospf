@@ -1,0 +1,14 @@
+Apr 07 19:23:45.397 HYPERVISOR: Release 0.2.18-amd64/Linux (tag 2018033112)
+Apr 07 19:23:45.397 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 52985.
+Apr 07 19:23:45.410 HYPERVISOR: exec_cmd: hypervisor version 
+Apr 07 19:23:45.411 HYPERVISOR: exec_cmd: hypervisor working_dir /home/mrhydden/AA_usal/infor/courses/3/projects/usal-gii-3-rip-ospf/OSPF/entorno_actual_5/project-files/dynamips 
+Apr 07 19:23:45.411 GENERAL: working_dir=/home/mrhydden/AA_usal/infor/courses/3/projects/usal-gii-3-rip-ospf/OSPF/entorno_actual_5/project-files/dynamips
+Apr 07 19:23:45.415 HYPERVISOR: exec_cmd: nio_bridge create HUB2 
+Apr 07 19:23:46.676 HYPERVISOR: exec_cmd: nio create_udp udp-28dc640f-7134-4e73-9250-71d86009dafc 10007 127.0.0.1 10006 
+Apr 07 19:23:46.676 HYPERVISOR: exec_cmd: nio_bridge add_nio HUB2 udp-28dc640f-7134-4e73-9250-71d86009dafc 
+Apr 07 19:23:47.220 HYPERVISOR: exec_cmd: nio create_udp udp-696c6092-33db-47e1-b87c-99adefa5b010 10016 127.0.0.1 10017 
+Apr 07 19:23:47.221 HYPERVISOR: exec_cmd: nio_bridge add_nio HUB2 udp-696c6092-33db-47e1-b87c-99adefa5b010 
+Apr 07 20:30:25.737 HYPERVISOR: exec_cmd: nio_bridge delete HUB2 
+Apr 07 20:30:25.855 HYPERVISOR: exec_cmd: hypervisor stop 
+Apr 07 20:30:26.109 HYPERVISOR: Stopped.
+Apr 07 20:30:26.109 GENERAL: reset done.
