@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 Apr 07 09:58:05.078 HYPERVISOR: Release 0.2.18-amd64/Linux (tag 2018033112)
 Apr 07 09:58:05.079 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 42523.
 Apr 07 09:58:05.097 HYPERVISOR: exec_cmd: hypervisor version 
@@ -69,3 +70,67 @@ Apr 07 10:56:07.653 VM: VM R2 destroyed.
 Apr 07 10:56:07.654 HYPERVISOR: exec_cmd: hypervisor stop 
 Apr 07 10:56:07.756 HYPERVISOR: Stopped.
 Apr 07 10:56:07.756 GENERAL: reset done.
+=======
+Apr 07 08:47:03.067 HYPERVISOR: Release 0.2.17-x86/Windows (tag 2017072410)
+Apr 07 08:47:03.067 HYPERVISOR: Started on IP = 192.168.1.35, TCP port = 53466.
+Apr 07 08:47:03.567 HYPERVISOR: exec_cmd: hypervisor version 
+Apr 07 08:47:03.567 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\Luis\Documents\GitHub\USAL-GII-3-RIP-OSPF\OSPF\entorno_ej_1_6\project-files\dynamips 
+Apr 07 08:47:03.567 GENERAL: working_dir=C:\Users\Luis\Documents\GitHub\USAL-GII-3-RIP-OSPF\OSPF\entorno_ej_1_6\project-files\dynamips
+Apr 07 08:47:03.567 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\Luis\Documents\GitHub\USAL-GII-3-RIP-OSPF\OSPF\entorno_ej_1_6\project-files\dynamips\8c0e63f9-1b79-4fbe-abd0-10b531d8cd86 
+Apr 07 08:47:03.567 GENERAL: working_dir=C:\Users\Luis\Documents\GitHub\USAL-GII-3-RIP-OSPF\OSPF\entorno_ej_1_6\project-files\dynamips\8c0e63f9-1b79-4fbe-abd0-10b531d8cd86
+Apr 07 08:47:03.567 HYPERVISOR: exec_cmd: vm create R2 2 c7200 
+Apr 07 08:47:03.567 VM: VM R2 created.
+Apr 07 08:47:03.567 HYPERVISOR: exec_cmd: vm set_con_tcp_port R2 5008 
+Apr 07 08:47:03.567 HYPERVISOR: exec_cmd: c7200 get_mac_addr R2 
+Apr 07 08:47:03.567 HYPERVISOR: exec_cmd: vm get_status R2 
+Apr 07 08:47:03.567 HYPERVISOR: exec_cmd: vm slot_add_binding R2 0 0 C7200-IO-FE 
+Apr 07 08:47:03.567 HYPERVISOR: exec_cmd: vm set_disk0 R2 0 
+Apr 07 08:47:03.567 HYPERVISOR: exec_cmd: vm set_exec_area R2 64 
+Apr 07 08:47:03.567 HYPERVISOR: exec_cmd: vm get_status R2 
+Apr 07 08:47:03.567 HYPERVISOR: exec_cmd: vm set_idle_pc R2 0x608724c0 
+Apr 07 08:47:03.567 HYPERVISOR: exec_cmd: vm set_ios R2 C:/Users/Luis/GNS3/images/IOS/c7200-jk9s-mz.124-13b.image 
+Apr 07 08:47:03.567 HYPERVISOR: exec_cmd: c7200 set_mac_addr R2 ca02.3402.0000 
+Apr 07 08:47:03.567 HYPERVISOR: exec_cmd: vm set_nvram R2 512 
+Apr 07 08:47:03.567 HYPERVISOR: exec_cmd: vm set_ram R2 512 
+Apr 07 08:47:03.567 HYPERVISOR: exec_cmd: vm get_status R2 
+Apr 07 08:47:03.567 HYPERVISOR: exec_cmd: vm slot_add_binding R2 1 0 PA-2FE-TX 
+Apr 07 08:47:03.567 HYPERVISOR: exec_cmd: vm get_status R2 
+Apr 07 08:47:03.567 HYPERVISOR: exec_cmd: vm slot_add_binding R2 2 0 PA-2FE-TX 
+Apr 07 08:47:03.567 HYPERVISOR: exec_cmd: vm get_status R2 
+Apr 07 08:47:03.567 HYPERVISOR: exec_cmd: vm slot_add_binding R2 3 0 PA-GE 
+Apr 07 08:47:03.567 HYPERVISOR: exec_cmd: vm get_status R2 
+Apr 07 08:47:03.567 HYPERVISOR: exec_cmd: vm slot_add_binding R2 4 0 PA-GE 
+Apr 07 08:47:06.021 HYPERVISOR: exec_cmd: nio create_udp udp-f9446c3a-314f-44a6-b91e-4ab31ca49c76 10026 127.0.0.1 10027 
+Apr 07 08:47:06.256 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R2 3 0 udp-f9446c3a-314f-44a6-b91e-4ab31ca49c76 
+Apr 07 08:47:06.256 HYPERVISOR: exec_cmd: vm get_status R2 
+Apr 07 08:47:06.287 HYPERVISOR: exec_cmd: nio create_udp udp-855c964d-7954-444d-a929-dcde401e4ce6 10030 127.0.0.1 10031 
+Apr 07 08:47:06.287 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R2 4 0 udp-855c964d-7954-444d-a929-dcde401e4ce6 
+Apr 07 08:47:06.287 HYPERVISOR: exec_cmd: vm get_status R2 
+Apr 07 08:47:18.379 HYPERVISOR: exec_cmd: vm create Ghost 0 c7200 
+Apr 07 08:47:18.379 VM: VM Ghost created.
+Apr 07 08:47:18.817 HYPERVISOR: exec_cmd: vm set_ios Ghost C:/Users/Luis/GNS3/images/IOS/c7200-jk9s-mz.124-13b.image 
+Apr 07 08:47:18.817 HYPERVISOR: exec_cmd: vm set_ghost_status Ghost 1 
+Apr 07 08:47:18.832 HYPERVISOR: exec_cmd: vm set_ghost_file Ghost 'C:\Users\Luis\Documents\GitHub\USAL-GII-3-RIP-OSPF\OSPF\entorno_ej_1_6\project-files\dynamips\c7200-jk9s-mz.124-13b.image-512.ghost' 
+Apr 07 08:47:18.832 HYPERVISOR: exec_cmd: vm set_ram Ghost 512 
+Apr 07 08:47:18.832 HYPERVISOR: exec_cmd: vm get_status Ghost 
+Apr 07 08:47:18.832 HYPERVISOR: exec_cmd: vm set_config Ghost configs\i0_startup-config.cfg 
+Apr 07 08:47:18.832 HYPERVISOR: exec_cmd: vm start Ghost 
+Apr 07 08:47:18.910 HYPERVISOR: exec_cmd: vm clean_delete Ghost 
+Apr 07 08:47:19.113 VM: VM Ghost shutdown.
+Apr 07 08:47:19.113 VM: VM Ghost destroyed.
+Apr 07 08:47:19.129 HYPERVISOR: exec_cmd: vm get_status R2 
+Apr 07 08:47:19.129 HYPERVISOR: exec_cmd: vm set_config R2 configs\i2_startup-config.cfg configs\i2_private-config.cfg 
+Apr 07 08:47:19.129 HYPERVISOR: exec_cmd: vm start R2 
+Apr 07 08:47:49.511 HYPERVISOR: exec_cmd: vm extract_config R2 
+Apr 07 10:19:41.128 HYPERVISOR: exec_cmd: vm get_status R2 
+Apr 07 10:19:41.128 HYPERVISOR: exec_cmd: vm stop R2 
+Apr 07 10:19:41.262 VM: VM R2 shutdown.
+Apr 07 10:19:41.263 HYPERVISOR: exec_cmd: vm extract_config R2 
+Apr 07 10:19:42.221 HYPERVISOR: exec_cmd: vm get_status R2 
+Apr 07 10:19:42.221 HYPERVISOR: exec_cmd: vm extract_config R2 
+Apr 07 10:19:42.224 HYPERVISOR: exec_cmd: vm delete R2 
+Apr 07 10:19:42.224 VM: VM R2 destroyed.
+Apr 07 10:19:42.227 HYPERVISOR: exec_cmd: hypervisor stop 
+Apr 07 10:19:42.430 HYPERVISOR: Stopped.
+Apr 07 10:19:42.430 GENERAL: reset done.
+>>>>>>> f0fd1c60fc2fb02b5bbf97b6fbdf5d35fcfd4209
